@@ -24,13 +24,13 @@ const Dandychair = () => {
         {/* Part Two */}
         <div className="bg-[#F6F6F6] p-6 flex flex-col  w-full lg:w-1/2 mb-[40%]">
           <div className=" space-y-4 ">
-            <h1 className="text-2xl font-bold">The Dandy Chair</h1>
+            <h1 className="text-2xl font-serif">The Dandy Chair</h1>
             <p className="text-base">£250</p>
 
             {/* Description */}
             <section>
-              <h2 className="text-xl font-semibold">Description</h2>
-              <p>
+              <h2 className="text-xl font-serif ">Description</h2>
+              <p className="font-serif">
                 A timeless design, with premium materials features as one of our
                 most popular and iconic pieces. The Dandy Chair is perfect for
                 any stylish living space with beech legs and lambskin leather
@@ -40,7 +40,7 @@ const Dandychair = () => {
 
             {/* Dimensions */}
             <section>
-              <h3 className="text-xl font-semibold">Dimensions</h3>
+              <h3 className="text-xl font-serif">Dimensions</h3>
               <ul className="list-inside space-y-2">
                 <li>
                   <strong>Height:</strong> 110cm
@@ -56,7 +56,7 @@ const Dandychair = () => {
 
             {/* Amount */}
             <section aria-labelledby="amount">
-              <h3 id="amount" className="text-xl font-semibold">
+              <h3 id="amount" className="text-xl font-serif">
                 Amount
               </h3>
               <div className="flex items-center justify-center space-x-4">
@@ -73,7 +73,8 @@ const Dandychair = () => {
           </div>
         </div>
       </div>
-      <h2 className="text-2xl ml-10">You might also like</h2>
+
+      <h2 className="text-2xl ml-10 font-serif">You might also like</h2>
       <Product />
       <BrandDiffer />
       <Benefitstwo />

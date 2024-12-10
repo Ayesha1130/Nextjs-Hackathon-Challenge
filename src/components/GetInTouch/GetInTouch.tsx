@@ -17,15 +17,15 @@ const GetInTouch = () => {
 
       <div className=" bg-[#F9F9F9] p-6 flex flex-col justify-start w-full lg:w-1/2  text-black ">
         <div className="text-start space-y-4 p-4 ">
-          <h1 className="text-2xl ">
+          <h1 className="text-2xl font-serif">
             Our service isn’t just personal, it’s actually hyper personally
             exquisite
           </h1>
-          <p className="text-base text-[#505977]">
+          <p className="text-base text-[#505977] font-serif">
             When we started Avion, the idea was simple. Make high quality
             furniture affordable and available for the mass market.
           </p>
-          <p className="text-[#505977]">
+          <p className="text-[#505977] font-serif">
             Handmade, and lovingly crafted furniture and homeware is what we
             live, breathe and design so our Chelsea boutique become the hotbed
             for the London interior design community.

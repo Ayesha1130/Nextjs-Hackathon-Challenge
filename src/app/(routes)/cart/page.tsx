@@ -54,7 +54,7 @@ const Cart = () => {
             height="134"
             className="object-cover"
           />
-          <div className="w-[179px]">
+          <div className="w-[179px] font-serif">
             <h2 className="text-xl font-semibold">Basic white vase</h2>
             <p className="text-sm text-gray-500">
               A timeless ceramic vase with a tri-color grey glaze.
@@ -78,8 +78,8 @@ const Cart = () => {
         <div className="text-xl font-semibold">
           <p>Subtotal: £185</p>
         </div>
-        <p>Taxes and shipping are calculated at checkout</p>
-        <button className="bg-[#2A254B] text-white py-[16px] px-[32px]">
+        <p className="font-serif">Taxes and shipping are calculated at checkout</p>
+        <button className="bg-[#2A254B] text-white py-[16px] px-[32px] font-serif">
           Go to Checkout
         </button>
       </div>

@@ -10,7 +10,7 @@ const Allproduct = () => {
       {/* Background Image Section */}
       <div className="bg-[url(/images/all.jpg)] bg-cover bg-center h-[50vh]">
         <div className="pt-40">
-          <h1 className="text-2xl pl-10 text-white">All Products</h1>
+          <h1 className="text-2xl pl-10 text-white font-serif">All Products</h1>
         </div>
       </div>
 
@@ -18,7 +18,7 @@ const Allproduct = () => {
       <div className="flex flex-col md:flex-row justify-between p-4 gap-3 ">
         {/* Filters */}
         <div className="flex gap-4">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 font-serif">
             <li className=''>Category<IoMdArrowDropdown size={20}/></li>
             <li className='flex'>Product type<IoMdArrowDropdown size={20}/></li>
             <li className='flex'>Price<IoMdArrowDropdown size={20}/></li>
@@ -28,7 +28,7 @@ const Allproduct = () => {
 
         {/* Sorting */}
         <div className="flex items-center">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 font-serif">
             <li>Sorting by:</li>
             <li className='flex'>Date added<IoMdArrowDropdown size={20}/></li>
           </ul>

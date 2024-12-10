@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  space-y-5">
         {/* Menu Section */}
         <div className="space-y-2">
-          <h2 className="text-2xl mb-2">Menu</h2>
+          <h2 className="text-2xl mb-2 font-serif">Menu</h2>
           <p className="text-sm">New arrivals</p>
           <p className="text-sm">Best sellers</p>
           <p className="text-sm">Recently viewed</p>
@@ -24,8 +24,8 @@ const Footer = () => {
 
         {/* Categories Section */}
         <div className="space-y-2">
-          <h2 className="text-2xl  mb-2">Categories</h2>
-          <p className="text-sm">Crockery</p>
+          <h2 className="text-2xl  mb-2 font-serif">Categories</h2>
+          <p className="text-sm ">Crockery</p>
           <p className="text-sm">Furniture</p>
           <p className="text-sm">Homeware</p>
           <p className="text-sm">Chairs</p>
@@ -34,17 +34,17 @@ const Footer = () => {
 
         {/* Our Company Section */}
         <div className="space-y-2">
-          <h2 className="text-2xl  mb-2">Our company</h2>
-          <p className="text-sm">About us</p>
-          <p className="text-sm">Vacancies</p>
-          <p className="text-sm">Contact us</p>
-          <p className="text-sm">Privacy</p>
-          <p className="text-sm">Returns policy</p>
+          <h2 className="text-2xl  mb-2 font-serif">Our company</h2>
+          <p className="text-sm ">About us</p>
+          <p className="text-sm ">Vacancies</p>
+          <p className="text-sm ">Contact us</p>
+          <p className="text-sm ">Privacy</p>
+          <p className="text-sm ">Returns policy</p>
         </div>
 
         {/* Mailing List Section */}
         <div className="flex flex-col">
-          <h2 className="text-2xl  mb-2">Join our mailing list</h2>
+          <h2 className="text-2xl  mb-2 font-serif">Join our mailing list</h2>
           <div className="flex w-full">
             <input
               type="text"
@@ -61,8 +61,8 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <hr className="border border-slate-500 my-6" />
       <div className="flex flex-col md:flex-row justify-between items-center ">
-        <p className="text-sm mb-5">
-          &copy; 2024 NextJS Milestone Work. All rights reserved.
+        <p className="text-sm mb-5 font-serif">
+          &copy; 2024 Ayesha Iqbal Hackathon. All rights reserved.
         </p>
         <div className="flex  gap-4 text-2xl ">
           <FaLinkedin />

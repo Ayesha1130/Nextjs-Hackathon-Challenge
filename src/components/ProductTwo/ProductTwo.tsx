@@ -14,7 +14,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Dandy chair</h2>
           <p>£250</p>
         </div>
 
@@ -27,7 +27,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">Rustic Vase Set</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">Rustic Vase Set</h2>
           <p>£155</p>
         </div>
 
@@ -40,7 +40,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Silky Vase</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Silky Vase</h2>
           <p>£125</p>
         </div>
 
@@ -53,7 +53,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Lucy Lamp</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Lucy Lamp</h2>
           <p>£399</p>
         </div>
 
@@ -66,7 +66,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Dandy chair</h2>
           <p>£250</p>
         </div>
 
@@ -79,7 +79,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">Rustic Vase Set</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">Rustic Vase Set</h2>
           <p>£155</p>
         </div>
 
@@ -92,7 +92,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Silky Vase</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B font-serif]">The Silky Vase</h2>
           <p>£125</p>
         </div>
 
@@ -105,7 +105,7 @@ const ProductTwo = () => {
             className="w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Lucy Lamp</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Lucy Lamp</h2>
           <p>£399</p>
         </div>
       </div>

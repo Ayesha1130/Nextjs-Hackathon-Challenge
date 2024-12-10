@@ -11,7 +11,7 @@ const Brand = () => {
       <div className="flex flex-col lg:flex-row gap-6 px-10 mt-10 mb-10">
         <div className=" bg-[#2A254B] p-6 flex flex-col justify-start w-full lg:w-1/2 text-white ">
           <div className="text-start space-y-4 p-4 ">
-            <h1 className="text-2xl ">
+            <h1 className="text-2xl font-serif ">
               The furniture brand for the future, with timeless designs
             </h1>
 
@@ -21,7 +21,7 @@ const Brand = () => {
               </button>
             </div>
             <div className=" pt-[70%]">
-              <p className="text-base ">
+              <p className="text-base font-serif ">
                 A new era in eco friendly furniture with Avelon, the French
                 luxury retail brand with nice fonts, tasteful colors and a
                 beautiful way to display things digitally using modern web
@@ -43,9 +43,9 @@ const Brand = () => {
         </div>
       </div>
       <BrandDiffer />
-      <h1 className="pl-5 text-2xl">New ceramics</h1>
+      <h1 className="pl-5 text-2xl font-serif">New ceramics</h1>
       <Product />
-      <h1 className="pl-5 text-2xl">Our popular products</h1>
+      <h1 className="pl-5 text-2xl font-serif">Our popular products</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
         <div className="grid   bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
@@ -57,7 +57,7 @@ const Brand = () => {
             className=" w-full h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">
             The Poplar suede sofa
           </h2>
           <p>£250</p>
@@ -72,7 +72,7 @@ const Brand = () => {
             className="  h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Dandy chair</h2>
           <p>£155</p>
         </div>
 
@@ -85,7 +85,7 @@ const Brand = () => {
             className=" h-full object-cover"
           />
 
-          <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>
+          <h2 className="mt-4 text-xl  text-[#2A254B] font-serif">The Dandy chair</h2>
           <p>£125</p>
         </div>
 

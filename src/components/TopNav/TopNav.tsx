@@ -17,10 +17,10 @@ const TopNav = () => {
 
   return (
     <header className="flex justify-between p-4 items-center  ">
-      <h1 className="text-[#22202E] ml-10 text-xl">Avion</h1>
+      <h1 className="text-[#22202E] ml-10 text-2xl font-serif">Avion</h1>
 
       <nav className="hidden md:hidden lg:block ">
-        <ul className="flex flex-row  justify-center gap-8 ">
+        <ul className="flex flex-row  justify-center gap-8 font-serif">
           <li>
           <Link href="/allproduct">All Product</Link>
           </li>
@@ -34,7 +34,7 @@ const TopNav = () => {
             <Link href="/">Tables</Link>
           </li>
           <li>
-            <Link href="/">Chairs</Link>
+            <Link href="/dandychair">Chairs</Link>
           </li>
           <li>
             <Link href="/">Crockery</Link>
@@ -50,7 +50,7 @@ const TopNav = () => {
 
       {isOpen && (
         <nav className=" md:block lg:hidden">
-          <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg">
+          <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg font-serif">
           <li>
           <Link href="/all product">All Product</Link>
           </li>

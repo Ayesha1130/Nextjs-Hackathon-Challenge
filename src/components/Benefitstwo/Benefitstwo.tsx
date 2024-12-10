@@ -7,10 +7,10 @@ const Benefitstwo = () => {
         <div className="bg-white rounded mx-4 sm:mx-10 md:mx-36 py-5">
           <div className="text-[#2A254B] ">
             <div className="flex flex-col text-center p-10">
-              <h2 className="text-2xl text-center sm:text-3xl md:text-4xl">
+              <h2 className="text-2xl text-center sm:text-3xl md:text-4xl font-serif">
                 Join the club and get the benefits
               </h2>
-              <p className="mx-auto max-w-3xl md:px-44 mt-5 text-sm sm:text-base">
+              <p className="mx-auto max-w-3xl md:px-44 mt-5 text-sm sm:text-base font-serif">
                 Sign up for our newsletter and receive exclusive offers on new
                 ranges, sales, pop-up stores, and more.
               </p>

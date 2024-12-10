@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1 className="text-[#22202E] ml-10 text-xl">Avion</h1>
 
         <nav className="hidden md:hidden lg:block ">
-          <ul className="flex flex-row  justify-center gap-8 ">
+          <ul className="flex flex-row  justify-center gap-8 font-serif ">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {isOpen && (
           <nav className=" md:block lg:hidden">
-            <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg">
+            <ul className="flex flex-col font-serif text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
       </header>
 
       <div className="p-5 bg-[#F9F9F9] hidden md:hidden lg:block">
-        <ul className="flex text-center justify-center gap-5">
+        <ul className="flex text-center justify-center gap-5 font-serif">
           <li>
             <Link href={"/brand"}>All Furniture</Link>
           </li>
