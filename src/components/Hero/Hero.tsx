@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -24,9 +25,9 @@ const Hero = () => {
                 <p className='text-base'>
                     With our new collection, view over 400 bespoke pieces from homeware through to furniture today.
                 </p>
-                <button className='bg-[#FFFFFF]  py-[16px] px-[32px] text-center border border-gray-300 hover:bg-[#F1F1F1] focus:outline-none'>
+                <Link href="/allproduct" className='bg-[#FFFFFF]  py-[20px] px-[32px] text-center border border-gray-300 hover:bg-[#F1F1F1] focus:outline-none'>
                     View collection
-                </button>
+                </Link>
             </div>
         </div>
         

@@ -26,13 +26,13 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="#">Contact</Link>
             </li>
             <li>
-              <Link href="/">Blog</Link>
+              <Link href="#">Blog</Link>
             </li>
           </ul>
         </nav>
@@ -47,21 +47,19 @@ const Navbar = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/">Contact</Link>
+                <Link href="#">Contact</Link>
               </li>
               <li>
-                <Link href="/">Blog</Link>
+                <Link href="#">Blog</Link>
               </li>
             </ul>
           </nav>
         )}
         <div className="flex gap-4 pr-10">
           <CiSearch size={20} />
-          <Link href={"/cart"}>
-            <MdOutlineShoppingCart size={20} />
-          </Link>
+          <Link href={'/cart'}><MdOutlineShoppingCart size={20} /></Link>
 
-          <FaUserCircle size={20} />
+          <Link href={'/'}><FaUserCircle size={20} /></Link>
 
           <button title="button" onClick={toggleMenu}>
             {!isOpen ? (
@@ -79,25 +77,25 @@ const Navbar = () => {
             <Link href={"/brand"}>All Furniture</Link>
           </li>
           <li>
-            <Link href={""}>Plant pots</Link>
+            <Link href={"#"}>Plant pots</Link>
           </li>
           <li>
-            <Link href={""}>Ceramics</Link>
+            <Link href={"#"}>Ceramics</Link>
           </li>
           <li>
-            <Link href={""}>Tables</Link>
+            <Link href={"#"}>Tables</Link>
           </li>
           <li>
             <Link href={"/dandychair"}>Chairs</Link>
           </li>
           <li>
-            <Link href={""}>Crockery</Link>
+            <Link href={"#"}>Crockery</Link>
           </li>
           <li>
-            <Link href={""}>Tableware</Link>
+            <Link href={"#"}>Tableware</Link>
           </li>
           <li>
-            <Link href={""}>Cutlery</Link>
+            <Link href={"#"}>Cutlery</Link>
           </li>
         </ul>
       </div>

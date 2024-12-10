@@ -47,14 +47,14 @@ const Brand = () => {
       <Product />
       <h1 className="pl-5 text-2xl">Our popular products</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-6">
-        <div className="flex flex-col  bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
+        <div className="grid   bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <Image
             src="/images/sofa.jpg"
             alt="product1"
             width={630}
             height={375}
-            className="w-full h-full object-cover"
+            className=" w-full h-full object-cover"
           />
 
           <h2 className="mt-4 text-xl  text-[#2A254B]">
@@ -63,26 +63,26 @@ const Brand = () => {
           <p>£250</p>
         </div>
 
-        <div className="flex flex-col  bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div className="grid   bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <Image
             src="/images/one.jpg"
             alt="product2"
             width={305}
             height={375}
-            className="w-full h-full object-cover"
+            className="  h-full object-cover"
           />
 
           <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>
           <p>£155</p>
         </div>
 
-        <div className="flex flex-col  bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div className="grid grid-cols-1  bg-white p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           <Image
             src="/images/chair.jpg"
             alt="product3"
             width={305}
             height={375}
-            className="w-full h-full object-cover"
+            className=" h-full object-cover"
           />
 
           <h2 className="mt-4 text-xl  text-[#2A254B]">The Dandy chair</h2>

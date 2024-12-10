@@ -55,25 +55,25 @@ const TopNav = () => {
           <Link href="/all product">All Product</Link>
           </li>
             <li>
-              <Link href="/">Plant pots</Link>
+              <Link href="#">Plant pots</Link>
             </li>
             <li>
-              <Link href="/">Ceramics</Link>
+              <Link href="#">Ceramics</Link>
             </li>
             <li>
               <Link href="/">Tables</Link>
             </li>
             <li>
-              <Link href="/">Chairs</Link>
+              <Link href="/dandychair">Chairs</Link>
             </li>
             <li>
-              <Link href="/">Crockery</Link>
+              <Link href="#">Crockery</Link>
             </li>
             <li>
-              <Link href="/">Tableware</Link>
+              <Link href="#">Tableware</Link>
             </li>
             <li>
-              <Link href="/">Cutlery</Link>
+              <Link href="#">Cutlery</Link>
             </li>
           </ul>
         </nav>
@@ -82,7 +82,8 @@ const TopNav = () => {
         <CiSearch size={20} />
         <Link href={'/cart'}><MdOutlineShoppingCart size={20} /></Link>
 
-        <FaUserCircle size={20} />
+        <Link href={'/'}><FaUserCircle size={20} /></Link>
+
         <button title="button" onClick={toggleMenu}>
           {!isOpen ? (
             <IoMdMenu size={20} className="md:block lg:hidden" />
