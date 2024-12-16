@@ -17,9 +17,9 @@ const Allproduct = () => {
       {/* Filters and Sorting Section */}
       <div className="flex flex-col md:flex-row justify-between p-4 gap-3 ">
         {/* Filters */}
-        <div className="flex gap-4">
-          <ul className="flex gap-4 font-serif">
-            <li className=''>Category<IoMdArrowDropdown size={20}/></li>
+        <div className="flex">
+          <ul className="flex gap-2 font-serif">
+            <li className='flex'>Category<IoMdArrowDropdown size={20}/></li>
             <li className='flex'>Product type<IoMdArrowDropdown size={20}/></li>
             <li className='flex'>Price<IoMdArrowDropdown size={20}/></li>
             <li className='flex'>Brand<IoMdArrowDropdown size={20}/></li>
