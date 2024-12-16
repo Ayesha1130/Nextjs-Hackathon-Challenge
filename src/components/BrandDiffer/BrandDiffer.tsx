@@ -5,12 +5,12 @@ import { PiFlowerTulip } from "react-icons/pi";
 
 const BrandDiffer = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-32 justify-center items-center">
       <h1 className="text-center text-xl mb-10 font-serif">
         What makes our brand different
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-9 gap-5 mb-20 p-8 ">
-        <div className="bg-[#F9F9F9] border w-[250px] h-[220px] p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mb-20 mx-20 gap-5 justify-center items-center ">
+        <div className="bg-[#F9F9F9] border w-[250px] h-[220px] p-10 ">
           <div className="font-serif">
             <CiDeliveryTruck />
             <h2 className="font-serif">Next day as standard</h2>

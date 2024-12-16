@@ -52,7 +52,7 @@ const TopNav = () => {
         <nav className=" md:block lg:hidden">
           <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg font-serif">
           <li>
-          <Link href="/all product">All Product</Link>
+          <Link href="/allproduct">All Product</Link>
           </li>
             <li>
               <Link href="#">Plant pots</Link>
