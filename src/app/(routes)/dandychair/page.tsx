@@ -10,7 +10,7 @@ const Dandychair = () => {
     <>
       <div className="flex flex-col lg:flex-row mt-10">
         {/* Part One */}
-        <div className="relative w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/dandy.jpg"
             alt="Dandy Chair"
@@ -57,7 +57,7 @@ const Dandychair = () => {
             {/* Amount */}
             <section aria-labelledby="amount">
               <h3 id="amount" className="text-xl font-serif">
-                Amount
+                Amount: $40
               </h3>
               <div className="flex items-center justify-center space-x-4">
                 <button className="bg-[#E1E1E1] px-4 py-2 rounded-md">-</button>

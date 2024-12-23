@@ -50,7 +50,7 @@ const TopNav = () => {
 
       {isOpen && (
         <nav className=" md:block lg:hidden">
-          <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-10 left-0 right-20 w-full rounded-lg shadow-lg font-serif">
+          <ul className="flex flex-col text-center items-center gap-4 p-4 bg-white text-black absolute mt-5 left-0 right-20 w-[70%] h-full rounded-lg shadow-lg font-serif">
           <li>
           <Link href="/allproduct">All Product</Link>
           </li>

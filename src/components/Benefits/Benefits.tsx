@@ -14,15 +14,15 @@ const Benefits = () => {
         </p>
       </div>
 
-      <div className="flex gap-5 text-center items-center justify-center">
+      <div className="flex gap-2 md:gap-5 text-center items-center justify-center">
         <p className="text-white flex items-center">
-          <FaCheckCircle className="mr-2 font-serif" /> Exclusive offers
+          <FaCheckCircle className=" font-serif" /> Exclusive offers
         </p>
         <p className="text-white flex items-center font-serif">
-          <FaCheckCircle className="mr-2" /> Free events
+          <FaCheckCircle className="" /> Free events
         </p>
         <p className="text-white flex items-center font-serif">
-          <FaCheckCircle className="mr-2" /> Large discounts
+          <FaCheckCircle className="" /> Large discounts
         </p>
       </div>
 
