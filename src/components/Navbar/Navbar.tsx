@@ -22,18 +22,18 @@ const Navbar = () => {
 
         <nav className="hidden md:hidden lg:block ">
           <ul className="flex flex-row  justify-center gap-8 font-serif ">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About Us</Link>
-            </li>
-            <li>
-              <Link href="#">Contact</Link>
-            </li>
-            <li>
-              <Link href="#">Blog</Link>
-            </li>
+          <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/products">Products</Link>
+              </li>
+              <li>
+                <Link href="/about">About us</Link>
+              </li>
+              <li>
+                <Link href="#">Contact</Link>
+              </li>
           </ul>
         </nav>
 
@@ -44,13 +44,13 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/products">Products</Link>
+              </li>
+              <li>
+                <Link href="/about">About us</Link>
               </li>
               <li>
                 <Link href="#">Contact</Link>
-              </li>
-              <li>
-                <Link href="#">Blog</Link>
               </li>
             </ul>
           </nav>
@@ -71,34 +71,7 @@ const Navbar = () => {
         </div>
       </header>
 
-      <div className="p-5 mt-0  bg-[#F9F9F9] hidden md:hidden lg:block">
-        <ul className="flex text-center justify-center gap-5 font-serif">
-          <li>
-            <Link href={"/brand"}>All Furniture</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Plant pots</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Ceramics</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Tables</Link>
-          </li>
-          <li>
-            <Link href={"/dandychair"}>Chairs</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Crockery</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Tableware</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Cutlery</Link>
-          </li>
-        </ul>
-      </div>
+      
     </>
   );
 };
