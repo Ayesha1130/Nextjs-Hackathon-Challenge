@@ -29,7 +29,7 @@ const SingleProduct = () => {
   useEffect(() => {
     if (id) {
       // Sanity Query to fetch product by _id
-      const query = `*[_type == "product" && _id == $id]{
+      const query = `*[_type == "products" && _id == $id]{
         _id,
         title,
         price,
@@ -107,12 +107,8 @@ const SingleProduct = () => {
               <h1 className="text-4xl font-extrabold text-gray-800 mb-4">{data.title}</h1>
               <p className="text-lg text-gray-700 mb-6">{data.description}</p>
               <p className="text-2xl text-green-600 font-semibold mb-4">${data.price}</p>
-              <p className="text-lg text-gray-600 mb-4">
-                <strong>Category:</strong> {data.category}
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                <strong>Rating:</strong> {data.rating.rate} ({data.rating.count} reviews)
-              </p>
+             
+           
 
               {/* Add to Cart Button */}
               <div className="flex justify-center mt-auto">

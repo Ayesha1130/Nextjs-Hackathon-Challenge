@@ -1,6 +1,7 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import ShipmentForm from "./ShipmentForm"; // Import the ShipmentForm component
 
 interface Product {
   imageUrl: string | StaticImport;
@@ -35,6 +36,8 @@ const Modal: React.FC<ModalProps> = ({
   form,
   handleInputChange,
 }) => {
+  const [orderPlaced, setOrderPlaced] = useState(false); // Track order placement
+
   if (!isOpen) return null;
 
   const calculateTotal = () => {
@@ -42,6 +45,18 @@ const Modal: React.FC<ModalProps> = ({
       .reduce((acc, item) => acc + item.price * item.quantity, 0)
       .toFixed(2);
   };
+
+  // Handle form submission and trigger order placed state change
+  const handleOrderSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setOrderPlaced(true); // Set order as placed, trigger shipment form
+    onSubmit(e); // Call the parent-provided submit function
+  };
+
+  if (orderPlaced) {
+    // If the order is placed, render the shipment form
+    return <ShipmentForm />;
+  }
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-500 flex items-center justify-center">
@@ -56,7 +71,7 @@ const Modal: React.FC<ModalProps> = ({
           Checkout
         </h2>
         <div className="mb-8">
-          <h3 className="text=2xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Order Summary
           </h3>
           {cart.length === 0 ? (
@@ -84,11 +99,11 @@ const Modal: React.FC<ModalProps> = ({
                     <p className="text-gray-600 text-sm">
                       Price: ${product.price.toFixed(2)}{" "}
                     </p>
-                    <p className="text-gray-600">
-                      Quantity: {product.quantity}
-                    </p>
+                    <p className="text-gray-600">Quantity: {product.quantity}</p>
                     <p className="text-gray-600 text-sm">
-                      Subtotal: ${(product.price * product.quantity).toFixed(2)}
+                      Subtotal: ${(
+                        product.price * product.quantity
+                      ).toFixed(2)}
                     </p>
                   </div>
                 </div>
@@ -99,48 +114,13 @@ const Modal: React.FC<ModalProps> = ({
             </div>
           )}
         </div>
-        <form onSubmit={onSubmit} className="space-y-6">
-          <div>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleInputChange}
-              placeholder="Full Name"
-              required
-              className="w-full p-4 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleInputChange}
-              placeholder="Email"
-              required
-              className="w-full p-4 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="address"
-              value={form.address}
-              onChange={handleInputChange}
-              placeholder="Address"
-              required
-              className="w-full p-4 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="bg-yellow-500 text-white py-3 px-6 rounded-lg w-full text-lg font-semibold transition-all"
-          >
-            Place Order
-          </button>
-        </form>
+        <button
+          type="submit"
+          onClick={handleOrderSubmit} // Use the new submit handler
+          className="bg-yellow-500 text-white py-3 px-6 rounded-lg w-full text-lg font-semibold transition-all"
+        >
+          Place Order
+        </button>
       </div>
     </div>
   );

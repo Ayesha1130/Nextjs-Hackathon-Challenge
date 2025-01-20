@@ -14,7 +14,7 @@ interface Product {
   imageUrl: string
 }
 
-const Products = () => {
+const ProductPage = () => {
   const [data, setData] = useState<Product[] | null>(null)
   const router = useRouter()
 
@@ -62,7 +62,7 @@ const Products = () => {
                     alt={product.name}
                     width={400}
                     height={400}
-                    className="object-contain rounded-lg h-40 w-40 transition-transform duration-500 transform hover:scale-110"
+                    className="rounded-lg h-60 w-full transition-transform duration-500 transform hover:scale-110"
                   />
                 </div>
                 <h2 className="text-xl font-bold mb-2">{product.name}</h2>
@@ -88,4 +88,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductPage;
