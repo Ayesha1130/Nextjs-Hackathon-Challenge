@@ -1,5 +1,5 @@
 
-import Product from '@/components/Product/Product';
+
 import ProductTwo from '@/components/ProductTwo/ProductTwo';
 import React from 'react';
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -35,7 +35,7 @@ const Allproduct = () => {
         </div>
       </div>
       <ProductTwo/>
-      <Product/>
+  
      
     </div>
   );

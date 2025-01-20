@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import BrandDiffer from "@/components/BrandDiffer/BrandDiffer";
-import Product from "@/components/Product/Product";
+
 
 import Benefitstwo from "@/components/Benefitstwo/Benefitstwo";
 
@@ -44,7 +44,7 @@ const Brand = () => {
       </div>
       <BrandDiffer />
       <h1 className="pl-5 text-2xl font-serif">New ceramics</h1>
-      <Product />
+
       <h1 className="pl-5 text-2xl font-serif">Our popular products</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
